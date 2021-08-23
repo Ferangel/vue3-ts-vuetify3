@@ -1,6 +1,6 @@
 <template>
   <div class="pButton">
-    <button>Puedes clicarme porque soy un botón molón</button>
+    <button>Esto debería ser un botón</button>
   </div>
 </template>
 <script lang="ts">
@@ -10,7 +10,7 @@ export default defineComponent({
   name: 'pButton',
   props: {
     button: {
-      type: String,
+      type: HTMLButtonElement,
       default: '',
     },
   },

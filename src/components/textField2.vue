@@ -1,7 +1,7 @@
 <template>
   <div class="textField">
     <label>{{label}}</label>
-    <input name="Usuario" type="text">
+    <input type="text">
   </div>
 </template>
 <script lang="ts">
@@ -22,22 +22,21 @@ export default defineComponent({
 });
 </script>
 <style lang="scss" scoped>
-    .textField {
-    position: absolute;
-    left: 36%;
-    margin: 50px auto;
-    background-color: rgb(149, 251, 136);
-    input {
+.textField {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  input {
     margin: 0 auto;
     width: 230px;
     height: 28px;
     text-align: center;
     background-color: rgb(255, 206, 206);
     border: 1px solid blue;
-    }
-    label{
-    display: inline-block;
-    width: 150px;
-    }
-    }
+  }
+  label{
+    width: 17%;
+  }
+}
 </style>

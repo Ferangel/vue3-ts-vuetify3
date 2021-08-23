@@ -1,6 +1,6 @@
 <template>
   <div class="pTitle">
-    <h1>Titulín</h1>
+    <h1>Regístrate</h1>
   </div>
 </template>
 <script lang="ts">

@@ -1,6 +1,5 @@
 <template>
     <div class="FERLogin">
-      <pTitle></pTitle>
       <h1 style="text-align: center">Iniciar sesión</h1>
       <br>
       <br>
@@ -12,24 +11,20 @@
         <br>
         <text-field label="Contraseña:"></text-field>
         <br>
+        <br>
         <pButton></pButton>
         <br>
-        <pAnchor></pAnchor>
     </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
 import textField from '@/components/textField.vue';
-import pAnchor from '@/components/p_anchor.vue';
-import pTitle from '@/components/p_title.vue';
 import pButton from '@/components/p_button.vue';
 
 export default defineComponent({
   name: 'FERLogin',
   components: {
     textField,
-    pAnchor,
-    pTitle,
     pButton,
   },
 

@@ -1,6 +1,6 @@
 <template>
   <div class="pAnchor">
-    <a href="https://google.com/" target="_blank">Esto es un enlace</a>
+    <a href="/login2" target="_self">Volver a la <b>página principal</b></a>
   </div>
 </template>
 <script lang="ts">
