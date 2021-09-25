@@ -19,7 +19,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import textField from '@/components/textField.vue';
-import pButton from '@/components/p_button.vue';
+import pButton from '@/components/p-button.vue';
 
 export default defineComponent({
   name: 'FERLogin',

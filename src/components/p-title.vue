@@ -1,24 +1,24 @@
 <template>
-  <div class="pButton">
-    <button>Esto debería ser un botón</button>
+  <div class="p-title">
+    <h1>{{label}}</h1>
   </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'pButton',
+  name: 'p-title',
   props: {
-    button: {
-      type: HTMLButtonElement,
-      default: '',
+    label: {
+      type: String,
+      default: 'Esto es un h1',
     },
   },
 });
 </script>
 
 <style lang="scss" scoped>
-.pButton {
+.p-title {
   display: flex;
   align-items: center;
   flex-direction: column;

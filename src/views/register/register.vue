@@ -1,42 +1,39 @@
 <template>
     <div class="register">
-      <pTitle></pTitle>
-      <br>
+      <p-title label="Regístrate"></p-title>
       <br>
         <text-field2 label="Usuario nuevo:">
         </text-field2>
         <br>
         <text-field2 label="Contraseña:"></text-field2>
         <br>
-        <text-field2 label="Repite la contraseña:">
-        </text-field2>
+        <text-field2 label="Repite la contraseña:"></text-field2>
         <br>
-        <text-field2 label="Edad:"></text-field2>
+        <text-field2 label="Fecha de nacimiento:" type="date"></text-field2>
         <br>
+        <p-button label="Registrarme"></p-button>
         <br>
-        <pButton></pButton>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <pAnchor></pAnchor>
+        <p-link
+        href="/login2/login2.vue"
+        target="_self"
+        label="Volver a la página principal">
+        </p-link>
     </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
 import textField2 from '@/components/textField2.vue';
-import pAnchor from '@/components/p_anchor.vue';
-import pTitle from '@/components/p_title.vue';
-import pButton from '@/components/p_button.vue';
+import pLink from '@/components/p-link.vue';
+import pTitle from '@/components/p-title.vue';
+import pButton from '@/components/p-button.vue';
 
 export default defineComponent({
   name: 'register',
   components: {
     textField2,
-    pAnchor,
     pTitle,
     pButton,
+    pLink,
   },
 });
 </script>
@@ -46,5 +43,4 @@ export default defineComponent({
   width: 100%;
   background-color: rgb(251, 151, 181);
 }
-
 </style>

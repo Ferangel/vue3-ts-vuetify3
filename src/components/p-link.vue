@@ -1,27 +1,33 @@
 <template>
-  <div class="pAnchor">
-    <a href="/login2" target="_self">Volver a la <b>página principal</b></a>
+  <div class="p-link">
+    <a>{{label}}</a>
   </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'pAnchor',
+  name: 'p-link',
   props: {
-    a: {
+    label: {
       type: String,
-      default: '',
+      default: 'Esto es un enlace',
     },
   },
 });
 </script>
 
 <style lang="scss" scoped>
-.pAnchor {
+.p-link {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+a {
+  color: blue;
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="textField">
     <label>{{label}}</label>
-    <input type="text">
+    <input :type="type">
   </div>
 </template>
 <script lang="ts">
@@ -10,6 +10,10 @@ import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'textField',
   props: {
+    type: {
+      type: String,
+      default: 'text',
+    },
     placeholder: {
       type: String,
       default: '',
